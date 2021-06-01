@@ -21,10 +21,31 @@
 	border: 1px solid #000;
 	text-align: center;
 	margin-top: 20px;
+	vertical-align: top;
 }
 
 .prod {
 	margin: auto;
 	border: 1px solid #000;
 	max-height: 260px;
+}
+
+.prod-sdesc {
+	border: 1px solid #000;
+	color: #000;
+	width: 100%;
+	margin: auto;
+	margin-top: 2px;
+	height: 35px;
+}
+
+.prod-price {
+	border: 1px solid #000;
+	word-wrap: break-word;
+	color: #000;
+	width: 100%;
+	margin: auto;
+	margin-top: 2px;
+	height: 25px;
+	vertical-align: bottom;
 }
