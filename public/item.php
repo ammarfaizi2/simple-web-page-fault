@@ -17,10 +17,9 @@ require __DIR__."/func.php";
 	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="assets/js/base.js"></script>
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css"/>
-	<link rel="stylesheet" type="text/css" href="assets/css/category.css"/>
 	<link rel="stylesheet" type="text/css" href="assets/css/base.css"/>
 </head>
 <body>
-	<?php require __DIR__."/navbar.php"; ?>
+	<?php require __DIR__."/navbar_main.php"; ?>
 </body>
 </html>

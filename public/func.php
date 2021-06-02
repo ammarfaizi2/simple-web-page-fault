@@ -1,27 +1,42 @@
 <?php
 
-function loadItems($list): array
-{
-	$ret = [];
-	$items = file($list);
-	foreach ($items as $item) {
-		$item = trim($item);
-		$ret[$item] = [
-			"desc" => trim(file_get_contents(__DIR__."/items/{$item}/desc.txt")),
-			"img" => "items/{$item}/image.jpg",
-			"title" => trim(file_get_contents(__DIR__."/items/{$item}/title.txt")),
-			"price" => (int)trim(file_get_contents(__DIR__."/items/{$item}/price.txt")),
-		];
-	}
-
-	return $ret;
-}
-
 function e(string $e): string
 {
 	return htmlspecialchars($e, ENT_QUOTES, "UTF-8");
 }
 
+$cl_up_vector = array_merge(range("\0", chr(31)), range(chr(128), "\xff"));
+unset($cl_up_vector[9]);
+$cl_up_vector = array_values($cl_up_vector);
+
+function cl_up(string $str)
+{
+	global $cl_up_vector;
+	return str_replace($cl_up_vector, "", $str);
+}
+
+function loadItems($list): array
+{
+	$ret = [];
+	$items = file($list);
+	shuffle($items);
+	foreach ($items as $item) {
+		$item = trim($item);
+
+		$title = trim(cl_up(file_get_contents(__DIR__."/items/{$item}/title.txt")));
+		if (strlen($title) >= 40)
+			$title = substr($title, 0, 40)."...";
+
+		$ret[$item] = [
+			"desc" => trim(cl_up(file_get_contents(__DIR__."/items/{$item}/desc.txt"))),
+			"img" => "items/{$item}/image.jpg",
+			"title" => $title,
+			"price" => (int)trim(cl_up(file_get_contents(__DIR__."/items/{$item}/price.txt"))),
+		];
+	}
+
+	return $ret;
+}
 
 function getCategories(): array
 {
@@ -31,7 +46,7 @@ function getCategories(): array
 		if ($v === "." || $v === "..")
 			continue;
 
-		$ret[$v] = trim(file_get_contents(__DIR__."/categories/{$v}/name.txt"));
+		$ret[$v] = trim(cl_up(file_get_contents(__DIR__."/categories/{$v}/name.txt")));
 	}
 	return $ret;
 }
@@ -44,7 +59,7 @@ function getSubCategories(string $id): array
 		if ($v === "." || $v === ".." || preg_match("/\\.txt\$/", $v))
 			continue;
 
-		$ret[$v] = trim(file_get_contents(__DIR__."/categories/{$id}/{$v}/name.txt"));
+		$ret[$v] = trim(cl_up(file_get_contents(__DIR__."/categories/{$id}/{$v}/name.txt")));
 	}
 	return $ret;
 }
