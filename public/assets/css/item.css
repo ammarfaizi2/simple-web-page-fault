@@ -1,3 +1,40 @@
+
+
+.prod-cont {
+	width: 100%;
+	height: auto;
+	padding: 2%;
+	border: 1px solid #000;
+	margin: auto;
+	margin-top: 50px;
+	word-wrap: break-word;
+	text-align: center;
+	background-color: #fff;
+	margin-bottom: 100px;
+}
+
+.prod-cont2 {
+	text-align: center;
+}
+
+.pt {
+	margin: auto;
+	display: inline-block;
+	width: 220px;
+	height: 350px;
+	padding: 20px;
+	border: 1px solid #000;
+	text-align: center;
+	margin-top: 20px;
+	vertical-align: top;
+}
+
+.prod {
+	margin: auto;
+	border: 1px solid #000;
+	max-height: 260px;
+}
+
 .prod-card {
 	margin-top: 30px;
 	padding: 20px;
@@ -15,4 +52,8 @@
 
 .prod-title {
 	margin-top: 5px;
+}
+
+.col-prod {
+	text-align: center;
 }
