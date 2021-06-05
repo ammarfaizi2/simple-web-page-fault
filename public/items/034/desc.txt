@@ -1,0 +1,128 @@
+Samsung
+SAMSUNG GALAXY Z FOLD2 SM-F916B 256GB ( MYSTIC BLACK )
+ 
+Rp 33.888.000
+
+Chipset Qualcomm SM8250 Snapdragon 865+ (7 nm+)
+Os Android 10
+Display 7.6 inches
+Ram / Internal 12 GB / 256 GB
+Simcard Nano-SIM and/or eSIM
+Rear Camera 12 MP + 12 MP + 12 MP
+Front Camera 10 MP + 10 MP
+Usb Type Type-C
+Battery Li-Po 4500 mAh non-removable
+Garansi Resmi Samsung Electronics Indonesia 1 Tahun
+
+BODY
+Dimensions Unfolded
+159.2 x 128.2 x 6.9 mm
+ 
+Folded
+159.2 x 68 x 16.8 mm
+ 
+Weight
+282 g (9.95 oz)
+ 
+Build
+Glass front (folded), plastic front (unfolded), glass back, aluminum frame
+SIM
+Nano-SIM and/or eSIM
+Samsung Pay (Visa, MasterCard certified)
+
+DISPLAY
+Type
+Foldable Dynamic AMOLED 2X capacitive touchscreen, 16M colors
+ 
+Size
+7.6 inches, 180.8 cm2 (~88.6% screen-to-body ratio)
+ 
+Resolution
+1768 x 2208 pixels (~373 ppi density)
+HDR10+
+120Hz refresh rate
+Cover display 6.23", Super AMOLED, 816 x 2260 pixels (25:9)
+ 
+PLATFORM
+OS
+Android 10, One UI 2.5
+ 
+Chipset
+Qualcomm SM8250 Snapdragon 865+ (7 nm+)
+ 
+CPU
+Octa-core (1x3.09 GHz Kryo 585 & 3x2.42 GHz Kryo 585 & 4x1.8 GHz Kryo 585)
+ 
+GPU
+Adreno 650
+ 
+MEMORY
+Card slot
+No
+ 
+Internal
+256 GB
+
+RAM
+12 GB
+UFS 3.1
+ 
+MAIN CAMERA
+Triple
+12 MP, f/1.8, 26mm (wide), 1/1.76", 1.8µm, Dual Pixel PDAF, OIS
+12 MP, f/2.4, 52mm (telephoto), 1/3.6", 1.0µm, PDAF, OIS, 2x optical zoom
+12 MP, f/2.2, 123?, 12mm (ultrawide), 1.12µm
+ 
+Features
+LED flash, HDR, panorama
+ 
+Video
+4K@60fps, 1080p@60/240fps (gyro-EIS), 720p@960fps (gyro-EIS), HDR10+
+ 
+SELFIE CAMERA
+Single
+10 MP, f/2.2, 26mm (wide), 1.22µm
+Cover camera 10 MP, f/2.2, 26mm (wide), 1.22µm
+ 
+Features
+HDR
+ 
+Video
+4K@30fps, 1080p@30fps, gyro-EIS
+ 
+SOUND
+Loudspeaker
+Yes, with stereo speakers
+ 
+3.5mm jack
+No
+32-bit/384kHz audio
+Tuned by AKG
+ 
+COMMS
+WLAN
+Wi-Fi 802.11 a/b/g/n/ac/6, dual-band, Wi-Fi Direct, hotspot
+ 
+Bluetooth
+5.0, A2DP, LE, aptX HD
+ 
+GPS
+Yes, with A-GPS, GLONASS, GALILEO, BDS
+ 
+NFC
+Yes
+ 
+USB
+3.1, Type-C 1.0 reversible connector
+
+ 
+FEATURES
+Sensors
+Fingerprint (side-mounted), accelerometer, gyro, proximity, compass, barometer
+ANT+
+Bixby natural language commands and dictation
+Samsung DeX (desktop experience support)
+ 
+BATTERY
+Type
+Li-Po 4500 mAh, non-removable
