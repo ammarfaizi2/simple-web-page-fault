@@ -50,9 +50,9 @@ function file_force_put_contents(string $file, string $data, int $flag)
 
 $repPHP = function (string $str): string {
 	$str = str_replace("index.php", "index.html", $str);
-	$str = preg_replace("/category\.php\?category=(.+?)\"/", "kategori_\$1.html\"", $str);
-	$str = preg_replace("/subcategory\.php\?category=(.+?)\\&amp\\;subcategory=(.+?)\"/", "subkategori_\$1_\$2.html\"", $str);
-	$str = preg_replace("/item.php\?id=(\d+)\"/", "item_\$1.html\"", $str);
+	$str = preg_replace("/\"category\.php\?category=(.+?)\"/", "\"kategori_\$1.html\"", $str);
+	$str = preg_replace("/\"subcategory\.php\?category=(.+?)\\&amp\\;subcategory=(.+?)\"/", "\"subkategori_\$1_\$2.html\"", $str);
+	$str = preg_replace("/\"item.php\?id=(\d+)\"/", "\"item_\$1.html\"", $str);
 	return $str;
 };
 
@@ -65,22 +65,53 @@ if (preg_match_all("/src=\"(.+?)\"/", $out, $m)) {
 	}
 }
 
+if (preg_match_all("/<link.+?href=\"(.+?)\"/", $out, $m)) {
+	unset($m[0]);
+	foreach ($m[1] as $k => $v) {
+		page_fault($v, $v);
+	}
+}
 
-if (preg_match_all("/href=\"(.+?)\"/", $out, $m)) {
+if (preg_match_all("/<a.+?href=\"(.+?)\"/", $out, $m)) {
 	unset($m[0]);
 	foreach ($m[1] as $k => $v) {
 		if ($v === "#")
 			continue;
 
+		$c = "none";
 		$saveTo = NULL;
 
-		if (preg_match("/category\.php\?category=(.+)/", $v, $m))
-			$saveTo = "kategory_{$m[1]}.html";
+		if (preg_match("/category\.php\?category=(.+)/", $v, $m)) {
+			$c = "category";
+			$saveTo = "kategori_{$m[1]}.html";
+		}
 
-		if (preg_match("/item.php\?id=(\d+)/", $v, $m))
+		if (preg_match("/item.php\?id=(\d+)/", $v, $m)) {
+			$c = "item";
 			$saveTo = "item_{$m[1]}.html";
+		}
 
 		if ($saveTo)
-			page_fault($v, $saveTo, $repPHP);
+			do_save_sub_page($v, $c, $saveTo);
+	}
+}
+
+function do_save_sub_page(string $v, string $c, string $saveTo)
+{
+	global $repPHP;
+
+	$out = page_fault($v, $saveTo, $repPHP);
+	switch ($c) {
+	case "none":
+		break;
+	case "category":
+		if (preg_match_all("/href=\"(subcategory\.php\?category=(.+?)\\&amp\\;subcategory=(.+?))\"/", $out, $m)) {
+			unset($m[0]);
+			foreach ($m[1] as $k => $v) {
+				$v = html_entity_decode($v, ENT_QUOTES, "UTF-8");
+				page_fault($v, "subkategori_{$m[2][$k]}_{$m[3][$k]}.html", $repPHP);
+			}
+		}
+		break;
 	}
 }
