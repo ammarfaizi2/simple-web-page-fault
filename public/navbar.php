@@ -16,8 +16,6 @@
 <?php foreach (getCategories() as $k => $cc): ?>
 						<a class="dropdown-item" href="category.php?category=<?= e($k) ?>"><?= e($cc) ?></a>
 <?php endforeach; ?>
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="#">Something else here</a>
 					</div>
 				</li>
 <?php if (defined("IN_CATEGORY") || defined("IN_SUBCATEGORY")): ?>
@@ -29,8 +27,6 @@
 <?php foreach (getSubCategories($category) as $k => $cc): ?>
 						<a class="dropdown-item" href="subcategory.php?category=<?= e($category) ?>&amp;subcategory=<?= e($k) ?>"><?= e($cc) ?></a>
 <?php endforeach; ?>
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="#">Something else here</a>
 					</div>
 				</li>
 <?php endif; ?>
