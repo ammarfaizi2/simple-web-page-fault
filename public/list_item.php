@@ -12,4 +12,10 @@
 					</div>
 				</a>
 			</div>
-<?php endforeach; ?>
+<?php endforeach; return; ?>
+
+<script type="text/javascript">
+let x = <?= json_encode(loadItems($listFile), 128); ?>;
+
+</script>
+
