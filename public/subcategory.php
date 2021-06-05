@@ -27,7 +27,6 @@ $subcategoryName = file_get_contents(__DIR__."/categories/{$category}/{$subcateg
 	<script type="text/javascript" src="assets/js/jquery-3.4.1.slim.min.js"></script>
 	<script type="text/javascript" src="assets/js/popper.min.js"></script>
 	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="assets/js/base.js"></script>
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="assets/css/item.css"/>
 	<link rel="stylesheet" type="text/css" href="assets/css/base.css"/>
