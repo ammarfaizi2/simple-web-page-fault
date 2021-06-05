@@ -15,7 +15,7 @@ $categoryName = file_get_contents(__DIR__."/categories/{$category}/name.txt");
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Kategori Wanita</title>
+	<title>Kategori <?= e($categoryName) ?></title>
 	<script type="text/javascript" src="assets/js/jquery-3.4.1.slim.min.js"></script>
 	<script type="text/javascript" src="assets/js/popper.min.js"></script>
 	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
@@ -28,7 +28,7 @@ $categoryName = file_get_contents(__DIR__."/categories/{$category}/name.txt");
 	<?php require __DIR__."/navbar.php"; ?>
 	<div class="prod-cont">
 <?php require __DIR__."/prod_nav.php"; ?>
-		<h1 id="menu-heading">Daftar Menu Semua Kategori</h1>
+		<h1 id="menu-heading">Daftar Menu Kategori <?= e($categoryName) ?></h1>
 		<div class="row prod-cont2">
 <?php $listFile = __DIR__."/categories/{$category}/list.txt"; require __DIR__."/list_item.php"; ?>
 		</div>
