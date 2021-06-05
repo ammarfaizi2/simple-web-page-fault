@@ -59,7 +59,10 @@ function getSubCategories(string $id): array
 		if ($v === "." || $v === ".." || preg_match("/\\.txt\$/", $v))
 			continue;
 
-		$ret[$v] = trim(cl_up(file_get_contents(__DIR__."/categories/{$id}/{$v}/name.txt")));
+		$dir = __DIR__."/categories/{$id}/{$v}";
+		if (!is_dir($dir))
+			continue;
+		$ret[$v] = trim(cl_up(file_get_contents($dir."/name.txt")));
 	}
 	return $ret;
 }
