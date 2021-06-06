@@ -4,7 +4,7 @@
 	width: 100%;
 	height: auto;
 	padding: 2%;
-	border: 1px solid #000;
+	/* border: 1px solid #000; */
 	margin: auto;
 	margin-top: 50px;
 	word-wrap: break-word;
@@ -37,7 +37,7 @@
 
 .prod-card {
 	margin-top: 30px;
-	padding: 20px;
+	padding: 10px;
 	background-color: #ffe2fd;
 	color: #000;
 	border: 5px solid #000;
