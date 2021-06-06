@@ -23,7 +23,7 @@ $subcategoryName = file_get_contents(__DIR__."/categories/{$category}/{$subcateg
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Kategori Wanita</title>
+	<title>Kategori <?= e($categoryName) ?> Sub Kategori <?= e($subcategoryName) ?></title>
 	<script type="text/javascript" src="assets/js/jquery-3.4.1.slim.min.js"></script>
 	<script type="text/javascript" src="assets/js/popper.min.js"></script>
 	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
@@ -36,9 +36,10 @@ $subcategoryName = file_get_contents(__DIR__."/categories/{$category}/{$subcateg
 	<div class="prod-cont">
 <?php require __DIR__."/prod_nav.php"; ?>
 		<h1 id="menu-heading">Daftar Menu Kategori <?= e($categoryName) ?> Sub Kategori <?= e($subcategoryName) ?></h1>
-		<div class="row prod-cont2">
+		<div class="row justify-content-center prod-cont2">
 <?php $listFile = __DIR__."/categories/{$category}/{$subcategory}/list.txt"; require __DIR__."/list_item.php"; ?>
 		</div>
 	</div>
+	<?php require __DIR__."/footer.php"; ?>
 </body>
 </html>

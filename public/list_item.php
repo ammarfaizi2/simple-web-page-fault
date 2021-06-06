@@ -1,5 +1,5 @@
 <?php foreach (loadItems($listFile) as $k => $it): ?>
-			<div class="col col-prod">
+			<div style="margin-left: 10px; margin-right: 10px">
 				<a href="item.php?id=<?= e($k); ?>">
 					<div class="card prod-card" style="width: 18rem;">
 						<img class="prod" src="<?= e($it["img"]) ?>" alt="<?= e($it["title"]) ?>"/>
