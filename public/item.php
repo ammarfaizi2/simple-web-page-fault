@@ -31,7 +31,7 @@ $desc  = file_get_contents($bdir."/desc.txt");
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="assets/css/item.css"/>
 	<link rel="stylesheet" type="text/css" href="assets/css/base.css"/>
-	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/ionicons.min.css"/>
 </head>
 <body>
 	<?php require __DIR__."/navbar.php"; ?>

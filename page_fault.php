@@ -115,3 +115,18 @@ function do_save_sub_page(string $v, string $c, string $saveTo)
 		break;
 	}
 }
+
+$assets = [
+	"assets/css/base.css",
+	"assets/css/bootstrap.min.css",
+	"assets/css/ionicons.min.css",
+	"assets/css/item.css",
+	"assets/fonts/ionicons.ttf",
+	"assets/js/bootstrap.min.js",
+	"assets/js/jquery-3.4.1.slim.min.js",
+	"assets/js/popper.min.js",
+	"assets/wave.svg",
+];
+
+foreach ($assets as $v)
+	page_fault($v, $v);
