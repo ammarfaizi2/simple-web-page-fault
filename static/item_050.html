@@ -27,6 +27,7 @@
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 						<a class="dropdown-item" href="kategori_anak.html">Anak</a>
+						<a class="dropdown-item" href="kategori_health_n_beauty.html">Health &amp; Beauty</a>
 						<a class="dropdown-item" href="kategori_lifestyle.html">Lifestyle</a>
 						<a class="dropdown-item" href="kategori_pria.html">Pria</a>
 						<a class="dropdown-item" href="kategori_wanita.html">Wanita</a>
@@ -48,7 +49,8 @@
 				<div class="col">
 					<div class="item-info">
 						<h3>Sportswear Big Kids&#039; Woven Tracksuit</h3>
-						<p>Nike<br/>Sportswear Big Kids&#039; Woven Tracksuit<br/>Rp 999.000<br/>Top<br/>- Best for lifestyle<br/>- Colourblock zip up track jacket<br/>- Hooded neckline<br/>- Regular fit<br/>- Zip fastening<br/>- Side pockets<br/>- Long sleeves<br/>- Polyblend<br/><br/>Bottom<br/>- Best for lifestyle<br/>- Side stripe track bottoms<br/>- Mid rise<br/>- Regular fit<br/>- Elasticised waist<br/>- Polyblend</p>
+						<p>Nike<br/>Sportswear Big Kids&#039; Woven Tracksuit<br/>Rp 999.000<br/>Top<br/>- Best for lifestyle<br/>- Colourblock zip up track jacket<br/>- Hooded neckline<br/>- Regular fit<br/>- Zip fastening<br/>- Side pockets<br/>- Long sleeves<br/>- Polyblend<br/><br/>Bottom<br/>- Best for lifestyle<span id="more_desc" style="display:none;">- Side stripe track bottoms<br/>- Mid rise<br/>- Regular fit<br/>- Elasticised waist<br/>- Polyblend</span></p>
+						<p id="read_mode_p"><a href="javascript:read_more();">Read More</a></p>
 						<div>
 							<button class="btn btn-primary">Beli</button>
 						</div>
@@ -57,7 +59,12 @@
 			</div>
 		</div>
 	</div>
-
+	<script type="text/javascript">
+		function read_more() {
+			$("#more_desc").show();
+			$("#read_mode_p").hide();
+		}
+	</script>
 	<div class="wave">
 	<img src="/assets/wave.svg" alt="">
 </div>
