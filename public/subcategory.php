@@ -31,6 +31,7 @@ $subcategoryName = file_get_contents(__DIR__."/categories/{$category}/{$subcateg
 	<link rel="stylesheet" type="text/css" href="assets/css/item.css"/>
 	<link rel="stylesheet" type="text/css" href="assets/css/base.css"/>
 	<link rel="stylesheet" type="text/css" href="assets/css/ionicons.min.css"/>
+	<link href="http://fonts.cdnfonts.com/css/wildy-sans" rel="stylesheet">
 </head>
 <body>
 	<?php require __DIR__."/navbar.php"; ?>

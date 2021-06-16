@@ -1,5 +1,5 @@
 <div class="wave">
-	<img src="/assets/wave.svg" alt="">
+	<img src="assets/wave.svg" alt="">
 </div>
 <footer class="footer-dark">
 	<div class="container">
