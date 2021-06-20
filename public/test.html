@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>You will be redirected in <span id="counter">10</span> second(s).</p>
+    <script type="text/javascript">
+        function countdown() {
+            var i = document.getElementById('counter');
+            if (parseInt(i.innerHTML) <= 0) {
+                location.href = 'login.php';
+            }
+            if (parseInt(i.innerHTML) != 0) {
+                i.innerHTML = parseInt(i.innerHTML) - 1;
+            }
+        }
+        setInterval(function() {
+            countdown();
+        }, 1000);
+    </script>
+
+</body>
+
+</html>

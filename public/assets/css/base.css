@@ -2,6 +2,18 @@ body {
 	background-color: rgb(255, 255, 255);
 }
 
+.navtop{
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+.logo{
+	margin-left: 70px; 
+	font-family: 'Wildy Sans', sans-serif;
+	font-size: 30px;
+}
+
 .img-itct {
 	max-width: 400px;
 	border: 3px solid gray;

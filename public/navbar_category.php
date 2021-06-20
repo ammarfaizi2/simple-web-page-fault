@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark navtop">
 		<a class="navbar-brand" href="/">Kleren</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -42,5 +42,14 @@
 				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
 				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cari Barang</button>
 			</form>
+			<div class="btn-group dropleft" style="padding-left: 15px; padding-right: 30px;">
+		<a href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		<i style="font-size: 30px; color: #fff;" class="fas fa-user-circle"></i>
+		</a>
+			<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+				<a class="dropdown-item" href="login.php">Login</a>
+				<a class="dropdown-item" href="register.php">Register</a>
+			</div>
+		</div>
 		</div>
 	</nav>
