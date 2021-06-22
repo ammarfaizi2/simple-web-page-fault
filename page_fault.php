@@ -59,6 +59,8 @@ $repPHP = function (string $str): string {
 };
 
 $out = page_fault("index.php", "index.html", $repPHP);
+// $out = page_fault("register.php", "register.html", $repPHP);
+// $out = page_fault("login.php", "login.html", $repPHP);
 
 
 if (preg_match_all("/src=\"(.+?)\"/", $out, $m)) {
