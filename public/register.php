@@ -94,7 +94,7 @@
         submit.addEventListener('click', function() {
             Swal.fire({
                 icon: 'success',
-                title: 'Login Successful',
+                title: 'Register Successful',
                 html: '<p>You will be redirected in <span id="counter">3</span> second(s).</p>',
                 showConfirmButton: false,
                 timer: 3500,
