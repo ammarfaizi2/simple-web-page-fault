@@ -30,6 +30,6 @@
 				<a href="#"><i class="icon ion-social-instagram"></i></a>
 			</div>
 		</div>
-		<p class="copyright">Company Name © 2021</p>
+		<p class="copyright">Kleren © 2021</p>
 	</div>
 </footer>

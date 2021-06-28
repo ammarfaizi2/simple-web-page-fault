@@ -9,38 +9,49 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/item.css"/>
 	<link rel="stylesheet" type="text/css" href="assets/css/base.css"/>
 	<link rel="stylesheet" type="text/css" href="assets/css/ionicons.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand" href="index.html" style="margin-left: 100px;">Kleren</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Kategori
-					</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item" href="kategori_anak.html">Anak</a>
-						<a class="dropdown-item" href="kategori_health_n_beauty.html">Health &amp; Beauty</a>
-						<a class="dropdown-item" href="kategori_lifestyle.html">Lifestyle</a>
-						<a class="dropdown-item" href="kategori_pria.html">Pria</a>
-						<a class="dropdown-item" href="kategori_wanita.html">Wanita</a>
-					</div>
-				</li>
-			</ul>
-			<form class="form-inline my-2 my-lg-0">
-				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cari Barang</button>
-			</form>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark navtop">
+	<a class="navbar-brand logo" href="index.html">Kleren</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+				<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Kategori
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+											<a class="dropdown-item" href="kategori_anak.html">Anak</a>
+											<a class="dropdown-item" href="kategori_health_n_beauty.html">Health &amp; Beauty</a>
+											<a class="dropdown-item" href="kategori_lifestyle.html">Lifestyle</a>
+											<a class="dropdown-item" href="kategori_pria.html">Pria</a>
+											<a class="dropdown-item" href="kategori_wanita.html">Wanita</a>
+									</div>
+			</li>
+					</ul>
+		<form class="form-inline my-2 my-lg-0">
+			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		</form>
+		<div class="btn-group dropleft" style="padding-left: 15px; padding-right: 30px;">
+		<a href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		<i style="font-size: 30px; color: #fff;" class="fas fa-user-circle"></i>
+		</a>
+			<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+				<a class="dropdown-item" href="login.html">Login</a>
+				<a class="dropdown-item" href="register.html">Register</a>
+			</div>
 		</div>
-	</nav>
-	<div class="prod-cont">
+	</div>
+</nav>	<div class="prod-cont">
 		<div class="container">
 			<div class="row">
 				<div class="col">
@@ -58,11 +69,56 @@
 			</div>
 		</div>
 	</div>
+	<div style="margin-top:-70px; margin-bottom:100px; margin-left:180px; margin-right:180px">
+	<h4>Recommendation</h4>
+	<div class="owl-carousel">
+		<div class="card prod-card" style="width: 250px; height:350px; text-align:center;">
+	<a href="item_039.html">
+<img class="card" style="width:150px; margin:auto;" src="items/039/image.jpg" alt="Dekorasi Kuda Silver"/>
+
+</a>
+<p class="card-text">Dekorasi Kuda Silver</p>
+</div>
+	<div class="card prod-card" style="width: 250px; height:350px; text-align:center;">
+	<a href="item_034.html">
+<img class="card" style="width:150px; margin:auto;" src="items/034/image.jpg" alt="SAMSUNG GALAXY Z FOLD2 SM-F916B 256GB ( ..."/>
+
+</a>
+<p class="card-text">SAMSUNG GALAXY Z FOLD2 SM-F916B 256GB ( ...</p>
+</div>
+	<div class="card prod-card" style="width: 250px; height:350px; text-align:center;">
+	<a href="item_065.html">
+<img class="card" style="width:150px; margin:auto;" src="items/065/image.jpg" alt="holy flawless bb cushion iris"/>
+
+</a>
+<p class="card-text">holy flawless bb cushion iris</p>
+</div>
+	<div class="card prod-card" style="width: 250px; height:350px; text-align:center;">
+	<a href="item_049.html">
+<img class="card" style="width:150px; margin:auto;" src="items/049/image.jpg" alt="Alseno Kids Sneakers Caractacus"/>
+
+</a>
+<p class="card-text">Alseno Kids Sneakers Caractacus</p>
+</div>
+	<div class="card prod-card" style="width: 250px; height:350px; text-align:center;">
+	<a href="item_077.html">
+<img class="card" style="width:150px; margin:auto;" src="items/077/image.jpg" alt="LC WaikikiWashable Face Mask"/>
+
+</a>
+<p class="card-text">LC WaikikiWashable Face Mask</p>
+</div>
+	</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script type="text/javascript">
 		function read_more() {
 			$("#more_desc").show();
 			$("#read_mode_p").hide();
 		}
+
+		$(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+});
 	</script>
 	<div class="wave">
 	<img src="assets/wave.svg" alt="">
@@ -96,7 +152,7 @@
 				<a href="#"><i class="icon ion-social-instagram"></i></a>
 			</div>
 		</div>
-		<p class="copyright">Company Name © 2021</p>
+		<p class="copyright">Kleren © 2021</p>
 	</div>
 </footer></body>
 </html>
