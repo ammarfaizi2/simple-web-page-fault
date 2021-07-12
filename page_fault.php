@@ -51,7 +51,9 @@ function file_force_put_contents(string $file, string $data, int $flag)
 $repPHP = function (string $str): string {
 	$str = str_replace("index.php", "index.html", $str);
 	$str = str_replace("register.php", "register.html", $str);
-	$str = str_replace("login.php", "login.html", $str);
+	$str = str_replace("login.php", "aboutus.html", $str);
+	$str = str_replace("aboutus.php", "aboutus.html", $str);
+	$str = str_replace("contactus.php", "contactus.html", $str);
 	$str = preg_replace("/\"category\.php\?category=(.+?)\"/", "\"kategori_\$1.html\"", $str);
 	$str = preg_replace("/\"subcategory\.php\?category=(.+?)\\&amp\\;subcategory=(.+?)\"/", "\"subkategori_\$1_\$2.html\"", $str);
 	$str = preg_replace("/\"item.php\?id=(\d+)\"/", "\"item_\$1.html\"", $str);
@@ -61,6 +63,8 @@ $repPHP = function (string $str): string {
 $out = page_fault("index.php", "index.html", $repPHP);
 // $out = page_fault("register.php", "register.html", $repPHP);
 // $out = page_fault("login.php", "login.html", $repPHP);
+// $out = page_fault("aboutus.php", "aboutus.html", $repPHP);
+// $out = page_fault("contactus.php", "contactus.html", $repPHP);
 
 
 if (preg_match_all("/src=\"(.+?)\"/", $out, $m)) {

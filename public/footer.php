@@ -11,25 +11,21 @@
 			<div class="col-sm-6 col-md-3 item" style="margin-left: 20px;">
 				<h3>LAYANAN</h3>
 				<ul>
-					<li><a href="#">Bantuan</a></li>
-					<li><a href="#">Cek Order</a></li>
-					<li><a href="#">Cara Pengembalian</a></li>
+				<li><a href="contactus.php">Contact Us</a></li>
 				</ul>
 			</div>
 			<div class="col-sm-6 col-md-3 item">
 				<h3>TENTANG KAMI</h3>
 				<ul>
-					<li><a href="#">About Us</a></li>
-					<li><a href="#">Contact Us</a></li>
-					<li><a href="#">Kebijakan Privasi</a></li>
+					<li><a href="aboutus.php">About Us</a></li>
 				</ul>
 			</div>
-			<div class="col item social">
-				<a href="#"><i class="icon ion-social-facebook"></i></a>
-				<a href="#"><i class="icon ion-social-twitter"></i></a>
-				<a href="#"><i class="icon ion-social-instagram"></i></a>
+			<div style="size: 100px;" class="col item social">
+				<a href="https://web.facebook.com/"><i class="icon ion-social-facebook"></i></a>
+				<a href="https://twitter.com/"><i class="icon ion-social-twitter"></i></a>
+				<a href="https://www.instagram.com/"><i class="icon ion-social-instagram"></i></a>
 			</div>
 		</div>
-		<p class="copyright">Company Name © 2021</p>
+		<p class="copyright">Kleren © 2021</p>
 	</div>
 </footer>

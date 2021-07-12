@@ -9,6 +9,8 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/item.css"/>
 	<link rel="stylesheet" type="text/css" href="assets/css/base.css"/>
 	<link rel="stylesheet" type="text/css" href="assets/css/ionicons.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
@@ -44,7 +46,7 @@
 		<i style="font-size: 30px; color: #fff;" class="fas fa-user-circle"></i>
 		</a>
 			<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-				<a class="dropdown-item" href="login.html">Login</a>
+				<a class="dropdown-item" href="aboutus.html">Login</a>
 				<a class="dropdown-item" href="register.html">Register</a>
 			</div>
 		</div>
@@ -67,11 +69,56 @@
 			</div>
 		</div>
 	</div>
+	<div style="margin-top:-70px; margin-bottom:100px; margin-left:180px; margin-right:180px">
+	<h4>Recommendation</h4>
+	<div class="owl-carousel">
+		<div class="card prod-card" style="width: 250px; height:350px; text-align:center;">
+	<a href="item_007.html">
+<img class="card" style="width:150px; margin:auto;" src="items/007/image.jpg" alt="Head Over Heels Addilyn Two Tone Bow Fla..."/>
+
+</a>
+<p class="card-text">Head Over Heels Addilyn Two Tone Bow Fla...</p>
+</div>
+	<div class="card prod-card" style="width: 250px; height:350px; text-align:center;">
+	<a href="item_027.html">
+<img class="card" style="width:150px; margin:auto;" src="items/027/image.jpg" alt="Tiento Baselayer Women Long Sleeve Thumb..."/>
+
+</a>
+<p class="card-text">Tiento Baselayer Women Long Sleeve Thumb...</p>
+</div>
+	<div class="card prod-card" style="width: 250px; height:350px; text-align:center;">
+	<a href="item_039.html">
+<img class="card" style="width:150px; margin:auto;" src="items/039/image.jpg" alt="Dekorasi Kuda Silver"/>
+
+</a>
+<p class="card-text">Dekorasi Kuda Silver</p>
+</div>
+	<div class="card prod-card" style="width: 250px; height:350px; text-align:center;">
+	<a href="item_076.html">
+<img class="card" style="width:150px; margin:auto;" src="items/076/image.jpg" alt="JACQUELINE DE YONGCommunity Mask 3-Pack"/>
+
+</a>
+<p class="card-text">JACQUELINE DE YONGCommunity Mask 3-Pack</p>
+</div>
+	<div class="card prod-card" style="width: 250px; height:350px; text-align:center;">
+	<a href="item_006.html">
+<img class="card" style="width:150px; margin:auto;" src="items/006/image.jpg" alt="H&amp;M Wide blouse"/>
+
+</a>
+<p class="card-text">H&amp;M Wide blouse</p>
+</div>
+	</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script type="text/javascript">
 		function read_more() {
 			$("#more_desc").show();
 			$("#read_mode_p").hide();
 		}
+
+		$(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+});
 	</script>
 	<div class="wave">
 	<img src="assets/wave.svg" alt="">
@@ -86,26 +133,22 @@
 			<div class="col-sm-6 col-md-3 item" style="margin-left: 20px;">
 				<h3>LAYANAN</h3>
 				<ul>
-					<li><a href="#">Bantuan</a></li>
-					<li><a href="#">Cek Order</a></li>
-					<li><a href="#">Cara Pengembalian</a></li>
+				<li><a href="contactus.html">Contact Us</a></li>
 				</ul>
 			</div>
 			<div class="col-sm-6 col-md-3 item">
 				<h3>TENTANG KAMI</h3>
 				<ul>
-					<li><a href="#">About Us</a></li>
-					<li><a href="#">Contact Us</a></li>
-					<li><a href="#">Kebijakan Privasi</a></li>
+					<li><a href="aboutus.html">About Us</a></li>
 				</ul>
 			</div>
-			<div class="col item social">
-				<a href="#"><i class="icon ion-social-facebook"></i></a>
-				<a href="#"><i class="icon ion-social-twitter"></i></a>
-				<a href="#"><i class="icon ion-social-instagram"></i></a>
+			<div style="size: 100px;" class="col item social">
+				<a href="https://web.facebook.com/"><i class="icon ion-social-facebook"></i></a>
+				<a href="https://twitter.com/"><i class="icon ion-social-twitter"></i></a>
+				<a href="https://www.instagram.com/"><i class="icon ion-social-instagram"></i></a>
 			</div>
 		</div>
-		<p class="copyright">Company Name © 2021</p>
+		<p class="copyright">Kleren © 2021</p>
 	</div>
 </footer></body>
 </html>

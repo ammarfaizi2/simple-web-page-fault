@@ -41,6 +41,8 @@ $desc_rest = str_replace("\n", "<br/>", e(implode("\n", $desc_rest)));
 	<link rel="stylesheet" type="text/css" href="assets/css/item.css"/>
 	<link rel="stylesheet" type="text/css" href="assets/css/base.css"/>
 	<link rel="stylesheet" type="text/css" href="assets/css/ionicons.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
@@ -68,11 +70,22 @@ $desc_rest = str_replace("\n", "<br/>", e(implode("\n", $desc_rest)));
 			</div>
 		</div>
 	</div>
+	<div style="margin-top:-70px; margin-bottom:100px; margin-left:180px; margin-right:180px">
+	<h4>Recommendation</h4>
+	<div class="owl-carousel">
+	<?php $listFile = __DIR__."/items/list.txt"; require __DIR__."/suggest.php"; ?>
+	</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script type="text/javascript">
 		function read_more() {
 			$("#more_desc").show();
 			$("#read_mode_p").hide();
 		}
+
+		$(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+});
 	</script>
 	<?php require __DIR__."/footer.php"; ?>
 </body>
