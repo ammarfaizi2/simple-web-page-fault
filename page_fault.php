@@ -51,7 +51,7 @@ function file_force_put_contents(string $file, string $data, int $flag)
 $repPHP = function (string $str): string {
 	$str = str_replace("index.php", "index.html", $str);
 	$str = str_replace("register.php", "register.html", $str);
-	$str = str_replace("login.php", "aboutus.html", $str);
+	$str = str_replace("login.php", "login.html", $str);
 	$str = str_replace("aboutus.php", "aboutus.html", $str);
 	$str = str_replace("contactus.php", "contactus.html", $str);
 	$str = preg_replace("/\"category\.php\?category=(.+?)\"/", "\"kategori_\$1.html\"", $str);
